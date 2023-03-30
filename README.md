@@ -14,10 +14,10 @@ TG_CHANNEL - ID вашего телеграмм канала.
 
 Пример заполнения файла .env:
 
-NASA_API_KEY=vsgrf546wtege;
-TG_TOKEN=958423683:AAEAtJ5Lde5YYf:
-POST_LATENCY=14400:
-TG_CHANNEL=11418418541.
+- NASA_API_KEY=vsgrf546wtege;
+- TG_TOKEN=958423683:AAEAtJ5Lde5YYf:
+- POST_LATENCY=14400:
+- TG_CHANNEL=11418418541.
 
 Python3 должен быть уже установлен. 
 Затем используйте `pip` (или `pip3`, есть есть конфликт с Python2) для установки зависимостей:
