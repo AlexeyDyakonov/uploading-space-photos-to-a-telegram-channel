@@ -27,9 +27,9 @@ if __name__ == '__main__':
 
     response = requests.get(url, params=params)
     response.raise_for_status()
-    images_nasa = response.json()
+    nasa_photos = response.json()
 
-    for index, picture in enumerate(images_nasa):
+    for index, picture in enumerate(nasa_photos):
         picture_name = f"{picture['image']}.png"
         picture_datetime = picture['date']
         picture_date = picture_datetime.split()[0].split('-')
