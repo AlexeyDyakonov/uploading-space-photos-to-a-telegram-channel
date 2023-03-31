@@ -16,8 +16,7 @@ def load_photo_from_internet(url, filename, path, payload=None):
     response.raise_for_status()
     file_format = get_files_ext(url)
 
-    if not os.path.exists(path):
-        os.mkdir(path)
+    os.makedirs(path, exist_ok=True)
 
     image_path = os.path.join(path, (f'{filename}{file_format}'))
     with open(image_path, 'wb') as file:
