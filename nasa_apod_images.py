@@ -45,9 +45,9 @@ if __name__ == '__main_':
     }
     response = requests.get(nasa_url, params=params)
     response.raise_for_status()
-    images_nasa = response.json()
+    nasa_photos = response.json()
 
-    for number, image in enumerate(images_nasa, start=1):
+    for number, image in enumerate(nasa_photos, start=1):
         if image.get('hdurl'):
             load_photo_from_internet(
                 image['hdurl'],
